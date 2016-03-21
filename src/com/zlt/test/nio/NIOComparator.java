@@ -86,7 +86,7 @@ public class NIOComparator {
 		try {
 			fin = new FileInputStream(new File(TPATH));
 			FileChannel fc = fin.getChannel();// 取得文件通道
-			ByteBuffer byteBuffer = ByteBuffer.allocate(4000000 * 4);// 分配一个新的字节缓冲区
+			ByteBuffer byteBuffer = ByteBuffer.allocate(4000000 * 4);// 分配
 																		// Buffer
 			fc.read(byteBuffer);// 读取文件数据
 			fc.close();
